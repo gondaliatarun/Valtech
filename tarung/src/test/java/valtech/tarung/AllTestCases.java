@@ -3,13 +3,21 @@ package valtech.tarung;
 import org.testng.annotations.Test;
 
 public class AllTestCases extends Hooks {
-        
+
 	@Test(priority =1)
 	public void assertRecentBlogs(){
+		hp.acceptCookies();
+		utils.waitForMilliseconds();
+		hp.assertRecentBlogs();
+		System.out.println("Exe-2.a : Test Pass");
 	}
-	
+
 	@Test (priority =2)
 	public void assertFirstBlog() {
+		hp.acceptCookies();
+		hp.clickOnFirstBlog();
+		fut.assertFutureForDevOps();
+		System.out.println("Exe-2.b : Test Pass");
 	}
 	
 	@Test (priority = 3)

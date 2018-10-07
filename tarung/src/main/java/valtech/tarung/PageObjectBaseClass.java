@@ -7,8 +7,10 @@ import com.pages.servicesPage;
 import com.pages.theFutureForDevOps;
 import com.pages.workPage;
 import com.util.util;
+import org.openqa.selenium.WebDriver;
 
 public class PageObjectBaseClass {
+	public static WebDriver driver;
 	public static util utils = new util();
 	public static homePage hp = new homePage();
 	public static theFutureForDevOps fut = new theFutureForDevOps();
