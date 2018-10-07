@@ -17,4 +17,16 @@ public class homePage extends PageObjectBaseClass{
     public void clickOnFirstBlog(){
         utils.clickByLinkText("The future for DevOps");
     }
+
+    public void clickOnAbout(){
+        utils.clickByLinkText("ABOUT");
+    }
+
+    public void clickOnWork(){
+        utils.clickByLinkText("WORK");
+    }
+
+    public void clickOnServices(){
+        utils.clickByLinkText("SERVICES");
+    }
 }

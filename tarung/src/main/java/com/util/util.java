@@ -27,4 +27,8 @@ public class util extends PageObjectBaseClass{
         driver.findElement(By.cssSelector(element)).click();
     }
 
+    public String getRelaventURL() {
+        String currentURL =  driver.getCurrentUrl();
+        return currentURL.substring(currentURL.indexOf("/",15)+1,currentURL.lastIndexOf("/"));
+    }
 }
